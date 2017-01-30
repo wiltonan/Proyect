@@ -22,22 +22,18 @@
 
 			<div id="bglog">
 				<div class="row">
-					<form action="" method="POST">
 
+					<form action="controller/login.controller.php" method="POST">
 						<div class="col m12 s12 input-field">
 							<input type="text" name="txtusname" id="txtusname" validate>
 							<label for="" class=" black-text">Usuario</label>
-						</div>
-
-						<div class="col m12 s12 input-field" id="paso1">
-							<a class="waves-effect waves-light btn" id="confirm">Confirmar</a>
 						</div>
 
 						<div class="col m12 s12 input-field" id="paso2">
 							<input type="password" name="txtkey" id="txtkey" validate>
 							<label for="" class=" black-text">Contraseña</label>
 							<br>
-							<button class="btn">Acceder</button>
+							<button class="btn" name="action" value="login">Iniciar sesión</button>
 						</div>
 					</form>
 
@@ -64,21 +60,6 @@
 	<!-- sweetalert -->
 	<script src="view/plugins/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- jquery propio-->
-	<script>
-		$(document).ready(function(){
-			$("#confirm").click(function(){
-				var nick = $("#txtusname").val();
-				var act ="validateusr";
-				$.post("controller/ajax.php", {nick:nick, act:act}).done(function(data){
-					if (data=="1") {
-						$("#paso1").css('display','none');
-						$("#paso2").css('display','block');
-					}else{
-						swal("Este Usuario No Existe.","","error");
-					}
-				});
-			});
-		});
-	</script>
+
 </body>
 </html>
