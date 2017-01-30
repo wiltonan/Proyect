@@ -1,0 +1,59 @@
+#logo{
+	width: 60vh;
+	display:block;
+	margin:auto;
+}
+#bglog{
+	border-radius: 10px;
+	background-color: white;
+	width: 35%;
+	height: 250px;
+	margin: auto;
+	padding: 15px 30px;
+}
+#paso1, #paso2 button{
+	margin:auto;
+}
+#paso2{
+	display: none;
+}
+footer{
+	text-align: center;
+	background-color: ;
+	height: 60px;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+@media only screen and (max-width: 600px){
+
+}
+
+/*esto es para administrador */
+
+/*menu*/
+#dropdown1{
+min-width: 11%;
+background-color
+}
+
+#dropdown2{
+min-width: 10%;
+background-color
+}
+
+/*inicio*/
+.tbl_prncpl1 > center > h1{
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+/*historial de casos*/
+.tbl_prncpl2 > center > h1{
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+.row > a {
+	margin-top: 25px;
+}
+/*aqui termina la parte de administrador */
